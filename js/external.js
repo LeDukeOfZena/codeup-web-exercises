@@ -36,19 +36,26 @@
 // console.log(`The total cost is: ${totalCost}`);
 
 
-
-const Gpay = 400;
-const Apay = 380;
-const Fpay = 350;
-const GHours = prompt("How many google hours did you work?");
-const AHours = prompt("How many Amazon hours did you work?");
-const FHours = prompt("How many Facebook hours did you work?");
-const Google = parseFloat(Gpay * GHours);
-const Amazon = parseFloat(Apay * AHours);
-const Facebook = parseFloat(Fpay * FHours);
-const totalPay = Google + Amazon + Facebook;
-console.log("$" + totalPay);
-alert("Your total pay for the week is:" + totalPay.toLocaleString("en-US", { style: "currency", currency: "USD"}));
+//
+// const Gpay = 400;
+// const Apay = 380;
+// const Fpay = 350;
+// const GHours = prompt("How many google hours did you work?");
+// const AHours = prompt("How many Amazon hours did you work?");
+// const FHours = prompt("How many Facebook hours did you work?");
+// const Google = parseFloat(Gpay * GHours);
+// const Amazon = parseFloat(Apay * AHours);
+// const Facebook = parseFloat(Fpay * FHours);
+// const totalPay = Google + Amazon + Facebook;
+// console.log("$" + totalPay);
+// alert("Your total pay for the week is:" + totalPay.toLocaleString("en-US", { style: "currency", currency: "USD"}));
 // git add -A or git add .           (a period at the end)
 // git commit -m 'your message here'
 // git push origin main
+
+//breaking down a function
+function sayHello() {
+    console.log("Hello");
+};
+
+sayHello()
