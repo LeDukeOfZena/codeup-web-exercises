@@ -112,6 +112,58 @@
 //
 // tieFighter();
 
+//FUNCTIONS REVIEW
+//1. They're named contextually and appropriately
+//2. Functions declared at the top of the file
+//3. Do not use global variables inside of functions, pass them as arguments instead
+//4. Build and return; functions should not be opinionated on what you do with the result, just return it
+//5. Validate and return early
+//
+
+// console.log("spencer");
+
+//contextually and appropriately named
+const getUsername = (id) => {
+    //validation
+    if (!id) {
+        return "";
+    }
+    //build the result
+    let result;
+    const url = `https://ourapi.com/api/users/${id}`;
+    //... did the fetch magic
+    result = "Jason";
+    //return the result
+    return result;
+};
+
+const userID = 8675309;
+const username = getUsername(userID);
+if (username) {
+    console.log("We got a username here!");
+} else {
+    console.log("Uh Oh! No username!");
+};
+
+
+
+let favColor = "blue";
+
+if (favColor === "blue" || favColor === "red") {
+    console.log("I like blue/red too!")
+} else if (favColor === "blue") {
+    console.log("Yes! Love blue!");
+} else {
+    console.log("Nah! I don't like that color");
+}
+
+
+
+
+//CONDITION REVIEW
+// if(/*condition*/)
+
+
 
 
 
