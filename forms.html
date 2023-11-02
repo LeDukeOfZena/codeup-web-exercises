@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+</head>
+<body>
+
+<h1>Register With Us</h1>
+
+<!--<form method="POST" action="https://request-inspector.glitch.me/"></form>-->
+<!--    <label for="username">Username</label>-->
+<!--    <input-->
+<!--            type="text"-->
+<!--            name="username"-->
+<!--            id="username"-->
+<!--            placeholder="username"-->
+<!--    />-->
+<!--    <label for="password">Password</label>-->
+<!--    <input-->
+<!--            type="text"-->
+<!--            name="password"-->
+<!--            id="password"-->
+<!--            placeholder="password"-->
+<!--    />-->
+<!--    <button type="submit">Submit</button>-->
+<!--<label>Tell us about yourself-->
+<!--<br>-->
+<!--<textarea name="bio"></textarea>-->
+<!--</label>-->
+
+<!--</form>-->
+
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+<form method="POST" action="https://request-inspector.glitch.me/">
+    <label>
+        <span>Email</span>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+    </label>
+    <br>
+    <label>
+        <span>Password</span>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+    </label>
+    <br>
+    <label for="bio">
+        <span>bio</span>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself... "></textarea>
+    </label>
+    <section>
+        <h2>How did you hear about us?</h2><br>
+        <input type="checkbox" id="billboard" name="hear-about" value="billboard">
+        <label for="billboard">Billboard</label><br>
+
+        <input type="checkbox" id="radio-ad" name="hear-about" value="radio advertisement">
+        <label for="radio-ad">Radio Advertisement</label><br>
+
+        <input type="checkbox" id="internet-ad" name="hear-about" value="internet advertisement">
+        <label for="internet-ad">Internet Advertisement</label><br>
+
+        <input type="checkbox" id="other" name="hear-about" value="other">
+        <label for="other">Other</label><br>
+    </section>
+    <br>
+    <label for="browser">Select your web browser:</label>
+    <select id="browser" name="browser">
+        <option value="Chrome">Chrome</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Safari">Safari</option>
+        <option value="Edge">Edge</option>
+        <option value="Other">Other</option>
+    </select><br>
+<!--    git add -A or git add .           (a period at the end)-->
+<!--    git commit -m 'your message here'-->
+<!--    git push origin main-->
+
+</form>
+
+
+
+
+</body>
+</html>
