@@ -1,0 +1,20 @@
+.magicTest {
+    text-transform: uppercase;
+}
+
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: hotpink; /* Set the background color of your content area within the black background */
+    padding: 20px; /* Optional: Add padding to your content area for spacing */
+}
+
+body {
+    background-color: black;
+    margin: 0; /* Optional to remove any default margin around the body */
+    color: white;
+}
+
+p {
+    text-decoration: underline;
+}
