@@ -7,7 +7,98 @@
 </head>
 <body>
 
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks FAQ</title>
+    <style>
+        /* Add any additional styles here if needed */
+    </style>
+</head>
+<body>
 <h1>National Parks FAQ</h1>
+
+<div id="national-parks-div">
+    <h3 id="national-parks-heading">My Backyard National Park</h3>
+    <ul id="national-parks">
+        <li>There are fire-ants. A whole lot of fire-ants after the BBQ</li>
+        <li>Also referred to as The Badlands</li>
+        <li>How did I get in this unordered list? Quick! Call my fami.....</li>
+        <li>Denali used to live there</li>
+    </ul>
+</div>
+
+<div id="state-parks-div">
+    <h3 id="state-parks-heading">State Park of New Texas</h3>
+    <ul id="state-parks-texas">
+        <li>Archibald Jupiter is the inventor of this park</li>
+        <li>You should call your mom</li>
+        <li>Carlsbad Caverns is a Carl's-BAD name for a caverns. Am I right?</li>
+        <li>Denali. Flipper the Dolphin. Sandstorm</li>
+    </ul>
+</div>
+
+<div id="state-parks-div">
+    <h3 id="state-parks-heading">Artichoke State Sanctioned Park</h3>
+    <ul id="state-parks-texas">
+        <li>Abilene. ABILENE! YOU GET IN THIS HOUSE!!!</li>
+        <li>Artichokes have been here before, I swear</li>
+        <li>Go choke on a canyon</li>
+        <li>I'm sorry about that last unordered list item. I was in a very dark place when I wrote that</li>
+    </ul>
+</div>
+
+<!-- Add the button -->
+<button id="changeBackgroundBtn">Change Background</button>
+
+<script>
+    // Event listener for h3 elements
+    document.querySelectorAll('h3').forEach(function(h3) {
+        h3.addEventListener('click', function() {
+            // Access the ul element
+            const ul = h3.nextElementSibling;
+
+            // Get all the li elements
+            const liElements = ul.children;
+
+            // Loop through each li element and change fontWeight to "bold"
+            for (let i = 0; i < liElements.length; i++) {
+                liElements[i].style.fontWeight = 'bold';
+            }
+        });
+    });
+
+    // Event listener for li elements
+    document.querySelectorAll('li').forEach(function(li) {
+        li.addEventListener('click', function() {
+            // Access the parent ul element
+            const ul = li.parentElement;
+
+            // Access the first li element in the parent ul
+            const firstLi = ul.firstElementChild;
+
+            // Change the font color of the first li to blue
+            firstLi.style.color = 'blue';
+        });
+    });
+
+    // Event listener for the button
+    document.getElementById('changeBackgroundBtn').addEventListener('click', function() {
+        // Get all the last li elements within ul elements
+        const lastLiElements = document.querySelectorAll('ul li:last-child');
+
+        // Loop through each last li element and change background color
+        lastLiElements.forEach(function(lastLi) {
+            lastLi.style.backgroundColor = 'yellow';
+        });
+    });
+</script>
+</body>
+</html>
+
 
 <dl>
     <dt>How many people visit the national parks?</dt>
