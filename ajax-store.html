@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<!--<table id="products">-->
+<!--    <thead>-->
+<!--        <tr>-->
+<!--            <th>Title</th>-->
+<!--            <th>Quantity</th>-->
+<!--            <th>Price</th>-->
+<!--            <th>Categories</th>-->
+<!--        </tr>-->
+<!--    </thead>-->
+<!--    <tbody id="insertProducts"></tbody>-->
+<!--</table>-->
+
+<div class="page-wrapper justify-content-center">
+    <div class="container d-flex flex-column gap-4">
+        <div class="row text-center">
+            <div class="col">
+                <h1 class="display-4">Ajax Store</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Categories</th>
+                            <th scope="col" width="1"></th>
+                        </tr>
+                        </thead>
+                        <tbody id="tools">
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="js/ajax-store.js">
+    "use strict";
+    // TODO: Create an AJAX GET request for the file under data/inventory.json
+
+    // TODO: Take the data from inventory.json and append it to the products table
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+
+</script>
+
+</body>
+</html>
